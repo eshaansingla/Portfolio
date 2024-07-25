@@ -1,12 +1,9 @@
 body{
-    background-image: url("back.mp4");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
+    height: 100%;
     width:100%;
     padding:0;
     margin:0;
+    overflow: auto;
 }
 .icon{
     border-radius: 100%;
@@ -15,3 +12,97 @@ body{
 .icon:hover{
     opacity: 0.5;
 }
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.content {
+    position: static;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding-top: 2%;
+}
+#navbar-{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.self{
+    padding-top: 50%;
+}
+#main-text{
+    margin-top: 2%;
+    margin-left: 10%;
+    text-align: left;
+    font-size: 75px;
+}
+#exptext{
+    margin-left: 10%;
+    margin-right: 25%;
+    text-align: left;
+    
+}
+#nav-button:hover{
+    color: white;
+    border-radius: 0%;
+    border-bottom:solid white;
+    padding-bottom: 5px;
+}
+#see{
+    justify-content: left;
+    text-align: left;
+    margin-left: 10%;
+    border-radius: 0%;
+    padding:0;
+}
+#see:hover{
+color: white;
+border-radius: 0%;
+border-bottom:solid white;
+
+}
+.footer-tray {
+    position: fixed;
+    margin-bottom: 10%;
+    margin-left: 9%;
+    width: 100%;
+    color: white;
+    text-align: left;
+}
+
+.footer-tray a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.footer-tray a:hover {
+    color: #ddd;
+    border-bottom: solid white;
+}
+
+.social-icon {
+    display: inline-block;
+    padding: 10px;
+    transition: color 0.3s;
+}
+@media (max-width: 768px) {
+    .footer-tray {
+      font-size: 14px; /* Adjust font size for smaller screens */
+      padding: 8px 0;
+    }
+  }
+
+
