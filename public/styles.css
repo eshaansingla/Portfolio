@@ -98,11 +98,6 @@ border-bottom:solid white;
     padding: 10px;
     transition: color 0.3s;
 }
-@media (max-width: 768px) {
-    .footer-tray {
-      font-size: 14px; /* Adjust font size for smaller screens */
-      padding: 8px 0;
-    }
-  }
+
 
 
