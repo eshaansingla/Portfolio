@@ -44,14 +44,15 @@ html {
 #main-text{
     margin-top: 2%;
     margin-left: 10%;
+    margin-right: 0%;
     text-align: left;
-    font-size: 75px;
+    font-size: 5rem;
+    animation: glitch 1s infinite;
 }
 #exptext{
     margin-left: 10%;
     margin-right: 25%;
     text-align: left;
-    
 }
 #nav-button:hover{
     color: white;
@@ -62,15 +63,14 @@ html {
 #see{
     justify-content: left;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 8.5%;
     border-radius: 0%;
     padding:0;
 }
-#see:hover{
-color: white;
-border-radius: 0%;
-border-bottom:solid white;
-
+#see-content:hover{
+    border-bottom:solid white;
+    color: white;
+    border-radius: 0%;
 }
 .footer-tray {
     position: fixed;
@@ -98,6 +98,33 @@ border-bottom:solid white;
     padding: 10px;
     transition: color 0.3s;
 }
+@media only screen and (max-width: 600px) {
+    #main-text{
+        text-align:center;
+        margin-left:4%;
+    }
+    #exptext {
+        text-align:center;
+        margin-left: 8.5%;
+        margin-right: 3%;
+    }
+    #see{
+        justify-content: left;
+        text-align: center;
+        margin-left: 8.5%;
+        border-radius: 0%;
+        padding:0;
+    }
+    #see-content:hover{
+        border-bottom:solid white;
+        color: white;
+        border-radius: 0%;
+    }
 
+}
 
-
+  
+  
+  
+  
+  
