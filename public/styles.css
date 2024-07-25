@@ -6,11 +6,13 @@ body{
     overflow: auto;
 }
 .icon{
-    border-radius: 100%;
+    margin-left: 15px;
+    border-radius: 25%;
     border: solid white 3px;
+    transition: all 0.2s ease;
 }
 .icon:hover{
-    opacity: 0.5;
+    transform: scale(1.2); 
 }
 html {
     margin: 0;
@@ -29,36 +31,46 @@ html {
     z-index: -1;
 }
 .content {
-    position: static;
     z-index: 1;
     color: white;
     text-align: center;
     padding-top: 2%;
 }
-#navbar-{
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.self{
-    padding-top: 50%;
+#navbar{
+    margin-bottom: 25px;
 }
 #main-text{
-    margin-top: 2%;
     margin-left: 10%;
     margin-right: 0%;
     text-align: left;
     font-size: 5rem;
-    animation: glitch 1s infinite;
 }
 #exptext{
     margin-left: 10%;
     margin-right: 25%;
     text-align: left;
 }
+#nav-button{
+    transition: all 0.2s ease;
+    margin-right:15px;
+    position: relative;
+}
+#nav-button::after {
+    content: '';
+    position: absolute;
+    transition: background-color 0.2s ease;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+}
+#nav-button:hover::after {
+    background-color: white;
+}
 #nav-button:hover{
+    transform: scale(1.2);
     color: white;
-    border-radius: 0%;
-    border-bottom:solid white;
-    padding-bottom: 5px;
+    margin-right: 15px;
 }
 #see{
     justify-content: left;
@@ -67,13 +79,14 @@ html {
     border-radius: 0%;
     padding:0;
 }
+#see-content{
+    transition: all 0.2s ease;
+}
 #see-content:hover{
-    border-bottom:solid white;
     color: white;
-    border-radius: 0%;
+    transform: scale(1.1); 
 }
 .footer-tray {
-    position: fixed;
     margin-bottom: 10%;
     margin-left: 9%;
     width: 100%;
@@ -96,35 +109,70 @@ html {
 .social-icon {
     display: inline-block;
     padding: 10px;
-    transition: color 0.3s;
+    transition: color 0.2s;
 }
+.contme{
+    color: white;
+    text-decoration: none;
+}
+.contme:hover{
+    color: white;
+   text-decoration: underline;
+}
+
 @media only screen and (max-width: 600px) {
-    #main-text{
-        text-align:center;
-        margin-left:4%;
+    #main-text {
+        text-align: center;
+        margin-left: 4%;
     }
+
     #exptext {
-        text-align:center;
+        text-align: center;
         margin-left: 8.5%;
         margin-right: 3%;
     }
-    #see{
+
+    #see {
         justify-content: left;
         text-align: center;
         margin-left: 8.5%;
         border-radius: 0%;
-        padding:0;
+        padding: 0;
     }
-    #see-content:hover{
-        border-bottom:solid white;
+
+    #see-content:hover {
+        border-bottom: solid white;
         color: white;
         border-radius: 0%;
     }
 
-}
+    .d-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-  
-  
-  
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        margin-bottom: 10px;
+    }
+
+    .icon {
+        visibility: hidden;
+    }
+    #nav-button{
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 991.75px) {
+    .icon {
+        visibility: hidden;
+    }
+}
   
   
