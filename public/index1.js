@@ -11,7 +11,14 @@ document.getElementById("nav-buttonspc").addEventListener("click", function() {
                     </svg>`;
       }
  });
- 
+ function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 
 /* <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
         <div class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
