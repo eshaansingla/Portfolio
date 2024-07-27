@@ -16,7 +16,15 @@
     z-index: 10;
     transition: background-color 0.2s ease;
 }
-
+#see{
+    color: white;
+    transition: background-color 0.2s ease;
+}
+#see:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+    cursor: pointer;
+}
 .header::before {
     content: '';
     position: absolute;
@@ -78,7 +86,7 @@
 }
 
 .content {
-    margin: 15rem auto 0 auto;
+    margin: 12rem auto 0 auto;
     max-width: 60%;
     color: white;
 }
@@ -86,18 +94,25 @@
 #exptext {
     font-size: 0.875rem;
 }
+#maintext{
+    font-size: 5rem;
+}
 
 @media screen and (max-width: 992px) {
     .header {
         padding-left: 1.2rem 5%;
     }
 }
-
 @media screen and (max-width: 768px) {
     .icons {
         display: inline-flex;
     }
-
+    #exptext {
+        font-size: 0.875rem;
+    }
+    #maintext{
+        font-size: 3.5rem;
+    }
     #tap:checked~.icons #small {
         display: none;
     }
@@ -132,6 +147,7 @@
         background-color:black;
         opacity: 0.5;
         z-index: 5;
+        width: 100%;
         align-items: center;
     }
 
