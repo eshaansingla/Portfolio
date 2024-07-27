@@ -1,133 +1,145 @@
-body{
-    height: 100%;
-    width:100%;
-    padding:0;
-    margin:0;
-    overflow: auto;
+* {
+    z-index: 1;
 }
-.icon{
-    border-radius: 100%;
-    border: solid white 3px;
-}
-html {
+
+.header {
     margin: 0;
+    top: 5.5%;
     padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    padding: 1.2rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    transition: background-color 0.2s ease;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    z-index: -1;
 }
-.video-bg {
+
+.bgvid {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
-}
-.content {
-    position: static;
-    z-index: 1;
-    color: white;
-    text-align: center;
-    padding-top: 2%;
-}
-#navbar-{
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.self{
-    padding-top: 50%;
-}
-#main-text{
-    margin-top: 2%;
-    margin-left: 10%;
-    margin-right: 0%;
-    text-align: left;
-    font-size: 5rem;
-    animation: glitch 1s infinite;
-}
-#exptext{
-    margin-left: 10%;
-    margin-right: 25%;
-    text-align: left;
-}
-#nav-button:hover{
-    color: white;
-    border-radius: 0%;
-    border-bottom:solid white;
-    padding-bottom: 5px;
-}
-#see{
-    justify-content: left;
-    text-align: left;
-    margin-left: 8.5%;
-    border-radius: 0%;
-    padding:0;
-}
-#see-content:hover{
-    transform: scale(1.1);
-    color: white;
-    border-radius: 0%;
-}
-#see-content:focus {
-    outline: none;
-}
-.footer-tray {
-    position: fixed;
-    margin-bottom: 10%;
-    margin-left: 9%;
-    width: 100%;
-    color: white;
-    text-align: left;
+    z-index: -10;
 }
 
-.footer-tray a {
+.logo {
+    border-radius: 25%;
+    border: solid white;
+    transition: background-color 0.2s ease;
+}
+.logo:hover{
+    transform: scale(1.2);
+}
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.navbar a {
+    font-size: 1.15rem;
     color: white;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    transition: background-color 0.2s ease;
+}
+.navbar a:hover{
+    transform: scale(1.2);
 }
 
-.footer-tray a:hover {
-    color: #ddd;
-    border-bottom: solid white;
+#tap {
+    display: none;
 }
 
-.social-icon {
-    display: inline-block;
-    padding: 10px;
-    transition: color 0.3s;
+.icons {
+    position: absolute;
+    color: white;
+    display: none;
+    right: 5%;
 }
-.dark{
-    filter: invert(100%);
+
+.content {
+    margin: 15rem auto 0 auto;
+    max-width: 60%;
+    color: white;
 }
-@media only screen and (max-width: 600px) {
-    #main-text{
-        text-align:center;
-        margin-left:4%;
+
+#exptext {
+    font-size: 0.875rem;
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        padding-left: 1.2rem 5%;
     }
-    #exptext {
-        text-align:center;
-        margin-left: 8.5%;
-        margin-right: 3%;
+}
+
+@media screen and (max-width: 768px) {
+    .icons {
+        display: inline-flex;
     }
-    #see{
-        justify-content: left;
+
+    #tap:checked~.icons #small {
+        display: none;
+    }
+
+    #tap:checked~.icons #small-x {
+        display: block;
+    }
+
+    #small-x {
+        display: none;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 0;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        transition: height 0.2s ease;
+    }
+
+    #tap:checked~.header {
+        background-color: black;
+        opacity: 0.5;
+        z-index: 5;
+    }
+
+    #tap:checked~.navbar {
+        height: auto;
+        background-color:black;
+        opacity: 0.5;
+        z-index: 5;
+        align-items: center;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 2.5rem 0;
+        opacity: 1;
+        font-size: xx-large;
         text-align: center;
-        margin-left: 8.5%;
-        border-radius: 0%;
-        padding:0;
     }
-    #see-content:hover{
-        transform: scale(1.1);
-        color: white;
-        border-radius: 0%;
-    }
-
 }
-
-  
-  
-  
-  
-  
