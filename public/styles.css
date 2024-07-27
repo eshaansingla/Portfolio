@@ -9,9 +9,6 @@ body{
     border-radius: 100%;
     border: solid white 3px;
 }
-.icon:hover{
-    opacity: 0.5;
-}
 html {
     margin: 0;
     padding: 0;
@@ -68,9 +65,12 @@ html {
     padding:0;
 }
 #see-content:hover{
-    border-bottom:solid white;
+    transform: scale(1.1);
     color: white;
     border-radius: 0%;
+}
+#see-content:focus {
+    outline: none;
 }
 .footer-tray {
     position: fixed;
@@ -98,6 +98,9 @@ html {
     padding: 10px;
     transition: color 0.3s;
 }
+.dark{
+    filter: invert(100%);
+}
 @media only screen and (max-width: 600px) {
     #main-text{
         text-align:center;
@@ -116,7 +119,7 @@ html {
         padding:0;
     }
     #see-content:hover{
-        border-bottom:solid white;
+        transform: scale(1.1);
         color: white;
         border-radius: 0%;
     }
