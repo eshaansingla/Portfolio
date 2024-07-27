@@ -1,173 +1,78 @@
-body{
-    height: 100%;
-    width:100%;
-    padding:0;
-    margin:0;
-    overflow: auto;
-}
-.icon{
-    margin-left: 15px;
-    border-radius: 25%;
-    border: solid white 3px;
-    transition: all 0.2s ease;
-}
-.icon:hover{
-    transform: scale(1.2); 
-}
-html {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.video-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-.content {
-    z-index: 1;
-    color: white;
-    text-align: center;
-    padding-top: 2%;
-}
-#navbar{
-    margin-bottom: 25px;
-}
-#main-text{
-    margin-left: 10%;
-    margin-right: 0%;
-    text-align: left;
-    font-size: 5rem;
-}
-#exptext{
-    margin-left: 10%;
-    margin-right: 25%;
-    text-align: left;
-}
-#nav-button{
-    transition: all 0.2s ease;
-    margin-right:15px;
-    position: relative;
-}
-#nav-button::after {
-    content: '';
-    position: absolute;
-    transition: background-color 0.2s ease;
-    bottom: -3px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-}
-#nav-button:hover::after {
-    background-color: white;
-}
-#nav-button:hover{
-    transform: scale(1.2);
-    color: white;
-    margin-right: 15px;
-}
-#see{
-    justify-content: left;
-    text-align: left;
-    margin-left: 8.5%;
-    border-radius: 0%;
-    padding:0;
-}
-#see-content{
-    transition: all 0.2s ease;
-}
-#see-content:hover{
-    color: white;
-    transform: scale(1.1); 
-}
-.footer-tray {
-    margin-bottom: 10%;
-    margin-left: 9%;
-    width: 100%;
-    color: white;
-    text-align: left;
-}
-
-.footer-tray a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-}
-
-.footer-tray a:hover {
-    color: #ddd;
-    border-bottom: solid white;
-}
-
-.social-icon {
-    display: inline-block;
-    padding: 10px;
-    transition: color 0.2s;
-}
-.contme{
-    color: white;
-    text-decoration: none;
-}
-.contme:hover{
-    color: white;
-   text-decoration: underline;
-}
-
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: transparent;
-    overflow: hidden;
   }
   
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  body {
+    font-family: Arial, sans-serif;
   }
   
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
   }
-    
-  /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .nav-item:hover {
+    transform: scale(1.1);
+  }
+  
+  .hamburger {
     display: none;
-  }
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
+    flex-direction: column;
+    cursor: pointer;
   }
   
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
   }
   
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
   
