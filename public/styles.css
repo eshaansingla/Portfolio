@@ -1,7 +1,18 @@
 * {
     z-index: 1;
 }
-
+.dark{
+    filter: invert(100%) ;
+}
+#nav-buttonspc{
+    text-decoration: none;
+    color: white;
+}
+#nav-buttonspc:hover{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
 .header {
     margin: 0;
     top: 5.5%;
@@ -21,9 +32,16 @@
     transition: background-color 0.2s ease;
 }
 #see:hover{
-    transform: scale(1.1);
     text-decoration: underline;
     cursor: pointer;
+}
+#seemore{
+    color: white;
+    transition: background-color 0.2s ease;
+}
+#seemore:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 .header::before {
     content: '';
