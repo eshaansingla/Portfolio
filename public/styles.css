@@ -115,7 +115,14 @@
 #maintext{
     font-size: 5rem;
 }
-
+.social{
+    text-decoration: none;
+    color: white;
+    padding-right: 2.5%;
+}
+.social svg:hover{
+    transform: scale(1.2);
+}
 @media screen and (max-width: 992px) {
     .header {
         padding-left: 1.2rem 5%;
