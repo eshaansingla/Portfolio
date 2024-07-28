@@ -42,7 +42,6 @@
 #seemore:hover{
     cursor: pointer;
     text-decoration: underline;
-    transform: scale(1.2);
 }
 .header::before {
     content: '';
