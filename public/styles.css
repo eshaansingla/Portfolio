@@ -178,3 +178,26 @@
         text-align: center;
     }
 }
+#maintext {
+    animation: glitch 3s infinite;
+}
+@keyframes glitch {
+    0% {
+        text-shadow: 2px 2px red, -2px -2px blue;
+    }
+    20% {
+        text-shadow: -2px -2px red, 2px 2px blue;
+    }
+    40% {
+        text-shadow: 2px -2px red, -2px 2px blue;
+    }
+    60% {
+        text-shadow: -2px 2px red, 2px -2px blue;
+    }
+    80% {
+        text-shadow: 2px 2px red, -2px -2px blue;
+    }
+    100% {
+        text-shadow: -2px -2px red, 2px 2px blue;
+    }
+}
