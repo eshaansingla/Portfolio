@@ -100,7 +100,7 @@
     position: absolute;
     color: white;
     display: none;
-    right: 5%;
+    right: 3%;
 }
 
 .content {
@@ -163,9 +163,10 @@
     #tap:checked~.navbar {
         height: auto;
         background-color:black;
+        border: solid white;
         opacity: 0.5;
         z-index: 5;
-        width: 100%;
+        width: 99%;
         align-items: center;
     }
 
