@@ -186,25 +186,29 @@
     }
 }
 #maintext {
-    animation: glitch 4s infinite;
+    animation: fontChange 5s infinite;
 }
-@keyframes glitch {
+
+/*@keyframes fontChange {
     0% {
-        text-shadow: 4px 4px black, -4px -4px black;
+      font-family: 'League Gothic', sans-serif;
     }
     20% {
-        text-shadow: -4px -4px black, 4px 4px black;
+      font-family: 'Roboto', sans-serif;
     }
     40% {
-        text-shadow: 4px -4px black, -4px 4px black;
+      font-family: 'Montserrat', sans-serif;
     }
     60% {
-        text-shadow: -4px 4px black, 4px -4px black;
+      font-family: 'Lobster', cursive;
     }
     80% {
-        text-shadow: 4px 4px black, -4px -4px black;
+      font-family: 'Oswald', sans-serif;
     }
     100% {
-        text-shadow: -4px -4px black, 4px 2px black;
+      font-family: 'Bebas Neue', sans-serif;
     }
-}
+  }
+  */
+  
+  
