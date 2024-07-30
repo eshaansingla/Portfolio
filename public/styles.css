@@ -210,5 +210,25 @@
     }
   }
   */
-  
+  #name{
+    border: solid black;
+  }
+  #email{
+    border: solid black;
+  }
+  #message{
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    border: solid black;
+  }
+  #send-button{
+   border: solid black;
+   background-color: white;
+   
+
+  }
+  #send-button:hover{
+    background-color: black;
+    border: solid white;
+  }
   

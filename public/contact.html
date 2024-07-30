@@ -12,7 +12,7 @@
 <body>
     <video class="bgvid" src="back.mp4" autoplay loop muted></video>
     <header class="header">
-        <a href="" class="logo-container"><img src="E.png" height="50" width="50" class="logo"></a>
+        <a href="index.html" class="logo-container"><img src="E.png" height="50" width="50" class="logo"></a>
         <input type="checkbox" id="tap">
         <label class="icons" for="tap">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" id="small">
@@ -35,13 +35,6 @@
                   </svg>
                 <div class="text">Projects</div>
             </a>
-            <a href="contact.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
-                    <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                    <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492z"/>
-                  </svg>
-                <div class="text">Contact Me</div>
-            </a>
             <a id="nav-buttonspc">
                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
                     <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
@@ -51,13 +44,18 @@
         </nav>
     </header>
     <div class="content">
-        <h1 class="display-4 fw-bold text-white" id="maintext">I'M ESHAAN SINGLA.</h1>
+        <h1 class="display-4 fw-bold text-white" id="maintext">Contact Me.</h1>
         <p class="fs-5 mb-4" id="exptext">
-            A web developer filled with glorious purpose. I'm fascinated by the intersection of technology and design, and web development is the perfect blend of both. When I'm not building websites, you can find me nodding my head to the rap songs, losing myself to the rhythm, and finding new ways to channel my creativity into innovative web solutions.
-            <br><br>
-            I tread the path of minimalism, finding beauty in simplicity and order. Rocket League is my go-to remedy for a bad day - the speed, the skill, the thrill of victory (or agony of defeat) always gets me pumped up and ready to take on the world again. Anyways you can <a id="see">CONTACT ME</a>.<br>
-            <br>
-            <a id="seemore">See more about me -></a>
+            <b>You can send me a message here.</b>
+            <form>
+                <div class="fields" ><div class="field half" id="form-buttons"><input type="text" name="name" id="name" class="form-control" placeholder="Name" aria-required="true" required="" ></div>
+                <br>
+                <div class="field half" id="form-buttons"><input type="email" name="email" id="email" class="form-control" placeholder="Email" aria-required="true" required="" ></div>
+                <br>
+                <div class="field" id="form-buttons"><textarea name="message" id="message" rows="5" class="form-control" placeholder="Type your message here..." aria-required="true" required="" ></textarea></div></div>
+                <br>
+                <button class="btn btn-default" type="submit" aria-label="Send Message" id="send-button">Send Message</button>
+            </form>
         </p>
         <p>
 <a href=""class="social"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
