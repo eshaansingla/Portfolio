@@ -212,21 +212,43 @@
   */
   #name{
     border: solid black;
+    transition: background-color 0.25s ease-in;
+  }
+  #name:hover{
+    background-color: lightblue;
   }
   #email{
     border: solid black;
+    transition: background-color 0.25s ease-in;
+  }
+  #email:hover{
+    background-color: lightblue;
   }
   #message{
     scrollbar-width: thin;
     scroll-behavior: smooth;
     border: solid black;
+    transition: background-color 0.25s ease-in;
+  }
+  #message:hover{
+    background-color: lightblue;
   }
   #send-button{
    border: solid black;
    background-color: white;
   }
   #send-button:hover{
-    background-color: black;
-    border: solid white;
+    background-color: lightblue;
+    color: black;
   }
-  
+  .NAME{
+    background-color: #2f8d46;
+    background-image: url(
+"textback.gif");
+      background-repeat: repeat;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-top: 200px;
+      font-weight: 800;
+      -webkit-font-smoothing: antialiased;
+  }
