@@ -249,7 +249,6 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       margin-top: 200px;
-      
       -webkit-font-smoothing: antialiased;
   }
   @media screen and (max-width: 426px){
